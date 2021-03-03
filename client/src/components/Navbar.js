@@ -35,11 +35,11 @@ const Navbar = () => {
             {
               isLoggedIn ? (
                 <li className="nav-item text-right">
-                  <Logout></Logout>
+                  <Logout setIsLoggedIn={setIsLoggedIn}></Logout>
                 </li>
               ) : (
                   <li className="nav-item">
-                    <Login></Login>
+                    <Login setIsLoggedIn={setIsLoggedIn}></Login>
                   </li>
                 )
             }
